@@ -64,14 +64,16 @@ nav ul li a:hover {
 }
 
 h2 {
-	color: black; text-align : center;
+	color: black;
+	text-align: center;
 	margin-bottom: 30px;
 	font-weight: bold;
 	text-align: center;
 }
 
 h3 {
-	color: black; text-align : center;
+	color: black;
+	text-align: center;
 	margin-bottom: 16px;
 	font-weight: bold;
 	text-align: center;
@@ -146,11 +148,11 @@ footer {
 	</nav>
 	<div class="container">
 		<h2>Order Your Pizza</h2>
-		<div class="row">
-			<div class="col-md-6">
-				<div class="section-container">
-					<h3>Size</h3>
-					<form action="pizzaStatus.jsp" method="post">
+		<form action="pizzaStatus.jsp" method="post">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="section-container">
+						<h3>Size</h3>
 						<div class="form-group">
 							<select class="form-control" id="size" name="size">
 								<option>Small</option>
@@ -158,49 +160,50 @@ footer {
 								<option>Large</option>
 							</select>
 						</div>
-					</form>
-				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="section-container">
-					<h3>Crust</h3>
-					<div class="form-group">
-						<select class="form-control" id="crust" name="crust">
-							<option>Thin</option>
-							<option>Thick</option>
-							<option>Stuffed</option>
-						</select>
 					</div>
 				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-12">
-				<div class="section-container">
-					<h3>Toppings</h3>
-					<div class="form-group">
-						<div class="toppings-section">
-							<input type="checkbox" name="toppings" value="Cheese">
-							Cheese<br> <input type="checkbox" name="toppings"
-								value="Pepperoni"> Pepperoni<br> <input
-								type="checkbox" name="toppings" value="Mushrooms">
-							Mushrooms<br>
-						</div>
-						<div class="toppings-section">
-							<input type="checkbox" name="toppings" value="Chicken">
-							Chicken<br> <input type="checkbox" name="toppings"
-								value="Veggies"> Veggies<br> <input type="checkbox"
-								name="toppings" value="Seafood"> Seafood<br>
+				<div class="col-md-6">
+					<div class="section-container">
+						<h3>Crust</h3>
+						<div class="form-group">
+							<select class="form-control" id="crust" name="crust">
+								<option>Thin</option>
+								<option>Thick</option>
+								<option>Stuffed</option>
+							</select>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-12 button-container">
-				<button type="submit" class="btn btn-primary">Submit</button>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-container">
+						<h3>Toppings</h3>
+						<div class="form-group">
+							<div class="toppings-section">
+								<input type="checkbox" name="toppings" value="Cheese">
+								Cheese<br> <input type="checkbox" name="toppings"
+									value="Pepperoni"> Pepperoni<br> <input
+									type="checkbox" name="toppings" value="Mushrooms">
+								Mushrooms<br>
+							</div>
+							<div class="toppings-section">
+								<input type="checkbox" name="toppings" value="Chicken">
+								Chicken<br> <input type="checkbox" name="toppings"
+									value="Veggies"> Veggies<br> <input
+									type="checkbox" name="toppings" value="Seafood">
+								Seafood<br>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>
+			<div class="row">
+				<div class="col-md-12 button-container">
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</div>
+			</div>
+		</form>
 	</div>
 
 	<footer> &copy; 2024 Pizza Frenzy </footer>
